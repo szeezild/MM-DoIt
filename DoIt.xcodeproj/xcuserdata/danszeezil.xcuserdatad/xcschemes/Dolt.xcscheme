@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "07C0325B18D777D500F83B93"
-               BuildableName = "Dolt.app"
+               BuildableName = "DoIt.app"
                BlueprintName = "DoIt"
                ReferencedContainer = "container:DoIt.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "07C0327C18D777D500F83B93"
-               BuildableName = "DoltTests.xctest"
+               BuildableName = "DoItTests.xctest"
                BlueprintName = "DoItTests"
                ReferencedContainer = "container:DoIt.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "07C0325B18D777D500F83B93"
-            BuildableName = "Dolt.app"
+            BuildableName = "DoIt.app"
             BlueprintName = "DoIt"
             ReferencedContainer = "container:DoIt.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "07C0325B18D777D500F83B93"
-            BuildableName = "Dolt.app"
+            BuildableName = "DoIt.app"
             BlueprintName = "DoIt"
             ReferencedContainer = "container:DoIt.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "07C0325B18D777D500F83B93"
-            BuildableName = "Dolt.app"
+            BuildableName = "DoIt.app"
             BlueprintName = "DoIt"
             ReferencedContainer = "container:DoIt.xcodeproj">
          </BuildableReference>

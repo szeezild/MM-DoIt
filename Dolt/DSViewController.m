@@ -16,7 +16,6 @@
 }
 
 @property (weak, nonatomic) IBOutlet UITableView *myTableView;
-
 @property (weak, nonatomic) IBOutlet UITextField *myTextField;
 
 
@@ -30,8 +29,9 @@
 
     items = [[NSMutableArray alloc] initWithArray:@[@"One", @"Two", @"Three"]];
     
+    isEditModeEnabled = NO;
+
     self.myTextField.delegate = self;
-    
 }
 
 
@@ -57,17 +57,17 @@
 
 - (IBAction)onEditButtonPressed:(UIButton *)sender {
     
-    if ([sender.titleLabel.text isEqualToString:@"Edit"]) {
+    if (!isEditModeEnabled) {
         
         [sender setTitle:@"Done" forState:UIControlStateNormal];
         isEditModeEnabled = YES;
-        self.editing = YES;
+//        self.editing = YES;
         
     } else {
         
         [sender setTitle:@"Edit" forState:UIControlStateNormal];
         isEditModeEnabled = NO;
-        self.editing = NO;
+//        self.editing = NO;
     }
     
 }
@@ -88,10 +88,9 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"myReuseIdentifier"];
     
+    
     cell.textLabel.text = [NSString stringWithFormat:@"%@",items[indexPath.row]];
   
-    
-    
     return cell;
 }
 
@@ -102,21 +101,23 @@
         [items removeObjectAtIndex:indexPath.row];
         
         [self.myTableView reloadData];
-        
     }
+    
         UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
         cell.textLabel.textColor = [UIColor greenColor];
 }
 
 
-
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-    return YES;
-}
+#pragma mark - Table Cell delete methods
 
 
-
+//- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+//    
+//    return YES;
+//}
+//
+//
+//
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return YES;
@@ -126,11 +127,12 @@
 
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath
 {
-    NSString *stringToMove = items[sourceIndexPath.row];
+    NSString *stringToMove = [items objectAtIndex:sourceIndexPath.row];
     [items removeObjectAtIndex:sourceIndexPath.row];
+    
     [items insertObject:stringToMove atIndex:destinationIndexPath.row];
     
-    [tableView reloadData];
+    [self.myTableView reloadData];
 }
 
 
