@@ -1,0 +1,484 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07C0326018D777D500F83B93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C0325F18D777D500F83B93 /* Foundation.framework */; };
+		07C0326218D777D500F83B93 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C0326118D777D500F83B93 /* CoreGraphics.framework */; };
+		07C0326418D777D500F83B93 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C0326318D777D500F83B93 /* UIKit.framework */; };
+		07C0326A18D777D500F83B93 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07C0326818D777D500F83B93 /* InfoPlist.strings */; };
+		07C0326C18D777D500F83B93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C0326B18D777D500F83B93 /* main.m */; };
+		07C0327018D777D500F83B93 /* DSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C0326F18D777D500F83B93 /* DSAppDelegate.m */; };
+		07C0327318D777D500F83B93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C0327118D777D500F83B93 /* Main.storyboard */; };
+		07C0327618D777D500F83B93 /* DSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C0327518D777D500F83B93 /* DSViewController.m */; };
+		07C0327818D777D500F83B93 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07C0327718D777D500F83B93 /* Images.xcassets */; };
+		07C0327F18D777D500F83B93 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C0327E18D777D500F83B93 /* XCTest.framework */; };
+		07C0328018D777D500F83B93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C0325F18D777D500F83B93 /* Foundation.framework */; };
+		07C0328118D777D500F83B93 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C0326318D777D500F83B93 /* UIKit.framework */; };
+		07C0328918D777D600F83B93 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07C0328718D777D600F83B93 /* InfoPlist.strings */; };
+		07C0328B18D777D600F83B93 /* DoltTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C0328A18D777D600F83B93 /* DoltTests.m */; };
+		07C0329718D7993500F83B93 /* CheckMate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C0329618D7993500F83B93 /* CheckMate.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07C0328218D777D500F83B93 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07C0325418D777D500F83B93 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07C0325B18D777D500F83B93;
+			remoteInfo = Dolt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07C0325C18D777D500F83B93 /* DoIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DoIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07C0325F18D777D500F83B93 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		07C0326118D777D500F83B93 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		07C0326318D777D500F83B93 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		07C0326718D777D500F83B93 /* DoIt-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DoIt-Info.plist"; sourceTree = "<group>"; };
+		07C0326918D777D500F83B93 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		07C0326B18D777D500F83B93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		07C0326D18D777D500F83B93 /* DoIt-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DoIt-Prefix.pch"; sourceTree = "<group>"; };
+		07C0326E18D777D500F83B93 /* DSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSAppDelegate.h; sourceTree = "<group>"; };
+		07C0326F18D777D500F83B93 /* DSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSAppDelegate.m; sourceTree = "<group>"; };
+		07C0327218D777D500F83B93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		07C0327418D777D500F83B93 /* DSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DSViewController.h; sourceTree = "<group>"; };
+		07C0327518D777D500F83B93 /* DSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DSViewController.m; sourceTree = "<group>"; };
+		07C0327718D777D500F83B93 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		07C0327D18D777D500F83B93 /* DoItTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DoItTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07C0327E18D777D500F83B93 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		07C0328618D777D500F83B93 /* DoItTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DoItTests-Info.plist"; sourceTree = "<group>"; };
+		07C0328818D777D600F83B93 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		07C0328A18D777D600F83B93 /* DoltTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoltTests.m; sourceTree = "<group>"; };
+		07C0329618D7993500F83B93 /* CheckMate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CheckMate.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07C0325918D777D500F83B93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07C0329718D7993500F83B93 /* CheckMate.framework in Frameworks */,
+				07C0326218D777D500F83B93 /* CoreGraphics.framework in Frameworks */,
+				07C0326418D777D500F83B93 /* UIKit.framework in Frameworks */,
+				07C0326018D777D500F83B93 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07C0327A18D777D500F83B93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07C0327F18D777D500F83B93 /* XCTest.framework in Frameworks */,
+				07C0328118D777D500F83B93 /* UIKit.framework in Frameworks */,
+				07C0328018D777D500F83B93 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07C0325318D777D500F83B93 = {
+			isa = PBXGroup;
+			children = (
+				07C0326518D777D500F83B93 /* Dolt */,
+				07C0328418D777D500F83B93 /* DoltTests */,
+				07C0325E18D777D500F83B93 /* Frameworks */,
+				07C0325D18D777D500F83B93 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07C0325D18D777D500F83B93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07C0325C18D777D500F83B93 /* DoIt.app */,
+				07C0327D18D777D500F83B93 /* DoItTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07C0325E18D777D500F83B93 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07C0329618D7993500F83B93 /* CheckMate.framework */,
+				07C0325F18D777D500F83B93 /* Foundation.framework */,
+				07C0326118D777D500F83B93 /* CoreGraphics.framework */,
+				07C0326318D777D500F83B93 /* UIKit.framework */,
+				07C0327E18D777D500F83B93 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		07C0326518D777D500F83B93 /* Dolt */ = {
+			isa = PBXGroup;
+			children = (
+				07C0326E18D777D500F83B93 /* DSAppDelegate.h */,
+				07C0326F18D777D500F83B93 /* DSAppDelegate.m */,
+				07C0327118D777D500F83B93 /* Main.storyboard */,
+				07C0327418D777D500F83B93 /* DSViewController.h */,
+				07C0327518D777D500F83B93 /* DSViewController.m */,
+				07C0327718D777D500F83B93 /* Images.xcassets */,
+				07C0326618D777D500F83B93 /* Supporting Files */,
+			);
+			path = Dolt;
+			sourceTree = "<group>";
+		};
+		07C0326618D777D500F83B93 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				07C0326718D777D500F83B93 /* DoIt-Info.plist */,
+				07C0326818D777D500F83B93 /* InfoPlist.strings */,
+				07C0326B18D777D500F83B93 /* main.m */,
+				07C0326D18D777D500F83B93 /* DoIt-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		07C0328418D777D500F83B93 /* DoltTests */ = {
+			isa = PBXGroup;
+			children = (
+				07C0328A18D777D600F83B93 /* DoltTests.m */,
+				07C0328518D777D500F83B93 /* Supporting Files */,
+			);
+			path = DoltTests;
+			sourceTree = "<group>";
+		};
+		07C0328518D777D500F83B93 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				07C0328618D777D500F83B93 /* DoItTests-Info.plist */,
+				07C0328718D777D600F83B93 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07C0325B18D777D500F83B93 /* DoIt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07C0328E18D777D600F83B93 /* Build configuration list for PBXNativeTarget "DoIt" */;
+			buildPhases = (
+				07C0325818D777D500F83B93 /* Sources */,
+				07C0325918D777D500F83B93 /* Frameworks */,
+				07C0325A18D777D500F83B93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DoIt;
+			productName = Dolt;
+			productReference = 07C0325C18D777D500F83B93 /* DoIt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		07C0327C18D777D500F83B93 /* DoItTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07C0329118D777D600F83B93 /* Build configuration list for PBXNativeTarget "DoItTests" */;
+			buildPhases = (
+				07C0327918D777D500F83B93 /* Sources */,
+				07C0327A18D777D500F83B93 /* Frameworks */,
+				07C0327B18D777D500F83B93 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07C0328318D777D500F83B93 /* PBXTargetDependency */,
+			);
+			name = DoItTests;
+			productName = DoltTests;
+			productReference = 07C0327D18D777D500F83B93 /* DoItTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07C0325418D777D500F83B93 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DS;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Dan Szeezil";
+				TargetAttributes = {
+					07C0327C18D777D500F83B93 = {
+						TestTargetID = 07C0325B18D777D500F83B93;
+					};
+				};
+			};
+			buildConfigurationList = 07C0325718D777D500F83B93 /* Build configuration list for PBXProject "DoIt" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07C0325318D777D500F83B93;
+			productRefGroup = 07C0325D18D777D500F83B93 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07C0325B18D777D500F83B93 /* DoIt */,
+				07C0327C18D777D500F83B93 /* DoItTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07C0325A18D777D500F83B93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07C0327818D777D500F83B93 /* Images.xcassets in Resources */,
+				07C0326A18D777D500F83B93 /* InfoPlist.strings in Resources */,
+				07C0327318D777D500F83B93 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07C0327B18D777D500F83B93 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07C0328918D777D600F83B93 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07C0325818D777D500F83B93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07C0326C18D777D500F83B93 /* main.m in Sources */,
+				07C0327618D777D500F83B93 /* DSViewController.m in Sources */,
+				07C0327018D777D500F83B93 /* DSAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07C0327918D777D500F83B93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07C0328B18D777D600F83B93 /* DoltTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07C0328318D777D500F83B93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07C0325B18D777D500F83B93 /* DoIt */;
+			targetProxy = 07C0328218D777D500F83B93 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		07C0326818D777D500F83B93 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07C0326918D777D500F83B93 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		07C0327118D777D500F83B93 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07C0327218D777D500F83B93 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		07C0328718D777D600F83B93 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07C0328818D777D600F83B93 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07C0328C18D777D600F83B93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		07C0328D18D777D600F83B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07C0328F18D777D600F83B93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Dolt/DoIt-Prefix.pch";
+				INFOPLIST_FILE = "Dolt/DoIt-Info.plist";
+				PRODUCT_NAME = DoIt;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		07C0329018D777D600F83B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Dolt/DoIt-Prefix.pch";
+				INFOPLIST_FILE = "Dolt/DoIt-Info.plist";
+				PRODUCT_NAME = DoIt;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		07C0329218D777D600F83B93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Dolt.app/Dolt";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Dolt/Dolt-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DoltTests/DoItTests-Info.plist";
+				PRODUCT_NAME = DoItTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		07C0329318D777D600F83B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Dolt.app/Dolt";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Dolt/Dolt-Prefix.pch";
+				INFOPLIST_FILE = "DoltTests/DoItTests-Info.plist";
+				PRODUCT_NAME = DoItTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07C0325718D777D500F83B93 /* Build configuration list for PBXProject "DoIt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07C0328C18D777D600F83B93 /* Debug */,
+				07C0328D18D777D600F83B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07C0328E18D777D600F83B93 /* Build configuration list for PBXNativeTarget "DoIt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07C0328F18D777D600F83B93 /* Debug */,
+				07C0329018D777D600F83B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		07C0329118D777D600F83B93 /* Build configuration list for PBXNativeTarget "DoItTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07C0329218D777D600F83B93 /* Debug */,
+				07C0329318D777D600F83B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07C0325418D777D500F83B93 /* Project object */;
+}
