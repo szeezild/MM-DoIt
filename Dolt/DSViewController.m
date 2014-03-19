@@ -61,13 +61,13 @@
         
         [sender setTitle:@"Done" forState:UIControlStateNormal];
         isEditModeEnabled = YES;
-//        self.editing = YES;
+        self.myTableView.editing = YES;
         
     } else {
         
         [sender setTitle:@"Edit" forState:UIControlStateNormal];
         isEditModeEnabled = NO;
-//        self.editing = NO;
+        self.myTableView.editing = NO;
     }
     
 }
