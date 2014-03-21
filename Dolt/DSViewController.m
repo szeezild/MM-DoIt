@@ -31,15 +31,7 @@
     
     isEditModeEnabled = NO;
 
-    self.myTextField.delegate = self;
 }
-
-
-- (IBAction)enterText:(id)sender {
-    
-    
-}
-
 
 
 - (IBAction)onAddButtonPressed:(id)sender {
@@ -69,7 +61,6 @@
         isEditModeEnabled = NO;
         self.myTableView.editing = NO;
     }
-    
 }
 
 
@@ -108,21 +99,28 @@
 }
 
 
-#pragma mark - Table Cell delete methods
+#pragma mark - Table Cell delete method
+
+//  this makes DELETE BUTTON work
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    //check if the cell is set for deleting
+    if(editingStyle == UITableViewCellEditingStyleDelete)
+    {
+        [items removeObjectAtIndex:indexPath.row];
+        [self.myTableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+    }
+    
+}
 
 
-//- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-//    
-//    return YES;
-//}
-//
-//
-//
+#pragma mark - Table cell arrange methods
+
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
 {
     return YES;
 }
-
 
 
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath
@@ -134,8 +132,6 @@
     
     [self.myTableView reloadData];
 }
-
-
 
 
 @end
